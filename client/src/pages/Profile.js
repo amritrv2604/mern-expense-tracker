@@ -36,6 +36,7 @@ function Profile() {
       localStorage.setItem("email", res.data.user.email);
 
       toast.success("Profile Updated!");
+      navigate("/dashboard");
 
       setLoading(false);
     } catch (err) {
@@ -66,8 +67,8 @@ function Profile() {
             required
           />
 
-          <button className="profile-btn" type="submit">
-            Update
+          <button className="profile-btn" type="submit" disabled={loading}>
+            {loading ? "Updating..." : "Update"}
           </button>
         </form>
 

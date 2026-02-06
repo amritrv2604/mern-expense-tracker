@@ -264,7 +264,7 @@ function Dashboard() {
 
         <div className="summary-card">
           <h3>Balance</h3>
-          <h2>₹{summary.balance}</h2>
+          <h2>₹{balance}</h2>
         </div>
       </div>
 
