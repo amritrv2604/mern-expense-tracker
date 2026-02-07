@@ -22,7 +22,7 @@ function Profile() {
       const token = localStorage.getItem("token");
 
       const res = await axios.put(
-        "http://localhost:5000/api/auth/update",
+        "https://mern-expense-tracker-cw9e.onrender.com/api/auth/update",
         { name, email },
         {
           headers: {
