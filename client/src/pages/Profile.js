@@ -23,7 +23,7 @@ function Profile() {
       const token = localStorage.getItem("token");
 
       const res = await axios.put(
-        `${API}/api/auth/update`,
+        "http://localhost:5000/api/auth/update",
         { name, email },
         {
           headers: {
