@@ -22,7 +22,7 @@ function Profile() {
       const token = localStorage.getItem("token");
 
       const res = await axios.put(
-        "https://expense-tracker-backend-xelk.onrender.com//api/auth/update",
+        "http://localhost:5000/api/auth/update",
         { name, email },
         {
           headers: {

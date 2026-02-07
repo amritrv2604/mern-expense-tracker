@@ -83,7 +83,7 @@ function Dashboard() {
       const token = localStorage.getItem("token");
 
       const res = await axios.get(
-        "https://expense-tracker-backend-xelk.onrender.com//api/transactions/summary",
+        "http://localhost:5000/api/transactions/summary",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -102,14 +102,11 @@ function Dashboard() {
     try {
       const token = localStorage.getItem("token");
 
-      const res = await axios.get(
-        "https://expense-tracker-backend-xelk.onrender.com//api/transactions",
-        {
-          headers: {
-            Authorization: `Bearer ${token}`,
-          },
+      const res = await axios.get("http://localhost:5000/api/transactions", {
+        headers: {
+          Authorization: `Bearer ${token}`,
         },
-      );
+      });
 
       setTransactions(res.data);
     } catch (error) {
@@ -136,7 +133,7 @@ function Dashboard() {
       const token = localStorage.getItem("token");
 
       await axios.post(
-        "https://expense-tracker-backend-xelk.onrender.com//api/transactions",
+        "http://localhost:5000/api/transactions",
         {
           type,
           amount,
@@ -173,14 +170,11 @@ function Dashboard() {
     try {
       const token = localStorage.getItem("token");
 
-      await axios.delete(
-        `https://expense-tracker-backend-xelk.onrender.com//api/transactions/${id}`,
-        {
-          headers: {
-            Authorization: `Bearer ${token}`,
-          },
+      await axios.delete(`http://localhost:5000/api/transactions/${id}`, {
+        headers: {
+          Authorization: `Bearer ${token}`,
         },
-      );
+      });
       toast.success("Transaction deleted!");
 
       // Refresh data

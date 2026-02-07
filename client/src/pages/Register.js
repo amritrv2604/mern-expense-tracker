@@ -30,7 +30,7 @@ function Register() {
     try {
       setLoading(true);
 
-      await axios.post("https://expense-tracker-backend-xelk.onrender.com//api/auth/register", {
+      await axios.post("http://localhost:5000/api/auth/register", {
         name,
         email,
         password,
