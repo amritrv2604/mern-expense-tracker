@@ -83,7 +83,7 @@ function Dashboard() {
       const token = localStorage.getItem("token");
 
       const res = await axios.get(
-        "http://localhost:5000/api/transactions/summary",
+        "https://mern-expense-tracker-cw9e.onrender.com/api/transactions/summary",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -102,7 +102,7 @@ function Dashboard() {
     try {
       const token = localStorage.getItem("token");
 
-      const res = await axios.get("http://localhost:5000/api/transactions", {
+      const res = await axios.get("https://mern-expense-tracker-cw9e.onrender.com/api/transactions", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -133,7 +133,7 @@ function Dashboard() {
       const token = localStorage.getItem("token");
 
       await axios.post(
-        "http://localhost:5000/api/transactions",
+        "https://mern-expense-tracker-cw9e.onrender.com/api/transactions",
         {
           type,
           amount,
@@ -170,7 +170,7 @@ function Dashboard() {
     try {
       const token = localStorage.getItem("token");
 
-      await axios.delete(`http://localhost:5000/api/transactions/${id}`, {
+      await axios.delete(`https://mern-expense-tracker-cw9e.onrender.com/api/transactions/${id}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
