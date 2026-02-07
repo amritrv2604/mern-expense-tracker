@@ -4,7 +4,7 @@
 <p>The application includes secure authentication, transaction management, PDF report generation, and cloud database support using MongoDB Atlas.</p>
 
 <h3>🚀 Live Demo</h3>
-- 🌐 Frontend: https://mern-expense-tracker-arv.vercel.app/
+- 🌐 Frontend: https://mern-expense-tracker-arv.vercel.app/ <br>
 - ⚙️ Backend API: https://mern-expense-tracker-cw9e.onrender.com
 
 <h3>🛠 Tech Stack</h3>
