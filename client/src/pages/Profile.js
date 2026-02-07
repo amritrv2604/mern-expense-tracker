@@ -8,6 +8,7 @@ import "../styles/profile.css";
 
 function Profile() {
   const navigate = useNavigate();
+  const API = process.env.REACT_APP_API_URL;
 
   const [name, setName] = useState(localStorage.getItem("name"));
   const [email, setEmail] = useState(localStorage.getItem("email"));
@@ -22,7 +23,7 @@ function Profile() {
       const token = localStorage.getItem("token");
 
       const res = await axios.put(
-        "http://localhost:5000/api/auth/update",
+        `${API}/api/auth/update`,
         { name, email },
         {
           headers: {

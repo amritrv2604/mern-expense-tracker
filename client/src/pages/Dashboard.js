@@ -17,6 +17,7 @@ ChartJS.register(ArcElement, Tooltip, Legend);
 function Dashboard() {
   const navigate = useNavigate();
   const name = localStorage.getItem("name");
+  const API = process.env.REACT_APP_API_URL;
 
   // Summary
   const [summary, setSummary] = useState({
@@ -82,14 +83,11 @@ function Dashboard() {
     try {
       const token = localStorage.getItem("token");
 
-      const res = await axios.get(
-        "http://localhost:5000/api/transactions/summary",
-        {
-          headers: {
-            Authorization: `Bearer ${token}`,
-          },
+      const res = await axios.get(`${API}/api/transactions/summary`, {
+        headers: {
+          Authorization: `Bearer ${token}`,
         },
-      );
+      });
 
       setSummary(res.data);
     } catch (error) {
@@ -102,7 +100,7 @@ function Dashboard() {
     try {
       const token = localStorage.getItem("token");
 
-      const res = await axios.get("http://localhost:5000/api/transactions", {
+      const res = await axios.get(`${API}/api/transactions`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -133,7 +131,7 @@ function Dashboard() {
       const token = localStorage.getItem("token");
 
       await axios.post(
-        "http://localhost:5000/api/transactions",
+        `${API}/api/transactions`,
         {
           type,
           amount,
@@ -170,7 +168,7 @@ function Dashboard() {
     try {
       const token = localStorage.getItem("token");
 
-      await axios.delete(`http://localhost:5000/api/transactions/${id}`, {
+      await axios.delete(`${API}/api/transactions/${id}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
