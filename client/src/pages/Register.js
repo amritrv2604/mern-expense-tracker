@@ -3,7 +3,7 @@ import axios from "axios";
 import { useNavigate, Link } from "react-router-dom";
 import { toast } from "react-toastify";
 
-import "../styles/login.css"; // Reuse same CSS
+import "../styles/login.css";
 
 function Register() {
   const [name, setName] = useState("");
@@ -30,7 +30,7 @@ function Register() {
     try {
       setLoading(true);
 
-      await axios.post("http://localhost:5000/api/auth/register", {
+      await axios.post("https://mern-expense-tracker-cw9e.onrender.com/api/auth/register", {
         name,
         email,
         password,
