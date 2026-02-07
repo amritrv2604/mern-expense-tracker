@@ -9,45 +9,45 @@
 
 <h3>🛠 Tech Stack</h3>
 <h4>Frontend</h4>
-- ⚛️ React.js (Create React App)
-- 🎨 CSS
-- 📡 Axios
-- 🔁 React Router DOM
+- ⚛️ React.js (Create React App) <br>
+- 🎨 CSS <br>
+- 📡 Axios<br>
+- 🔁 React Router DOM<br>
 <h4>Backend</h4>
-- 🟢 Node.js
-- 🚂 Express.js
-- 🔐 JWT Authentication
-- 🔒 bcrypt.js
+- 🟢 Node.js<br>
+- 🚂 Express.js<br>
+- 🔐 JWT Authentication<br>
+- 🔒 bcrypt.js<br>
 <h4>Database</h4>
-- 🍃 MongoDB Atlas
-- 📦 Mongoose ODM
+- 🍃 MongoDB Atlas<br>
+- 📦 Mongoose ODM<br>
 <h4>Deployment</h4>
-- ☁️ Frontend: Vercel
-- ☁️ Backend: Render
-- ☁️ Database: MongoDB Atlas
+- ☁️ Frontend: Vercel<br>
+- ☁️ Backend: Render<br>
+- ☁️ Database: MongoDB Atlas<br>
 
 <h3>✨ Features</h3>
-✅ User Authentication (Register / Login)
-✅ Secure JWT Authorization
-✅ Add / Edit / Delete Transactions
-✅ Income & Expense Tracking
-✅ Real-time Balance Calculation
-✅ Profile Management
-✅ Download PDF Report
-✅ Cloud Database Support
+✅ User Authentication (Register / Login)<br>
+✅ Secure JWT Authorization<br>
+✅ Add / Edit / Delete Transactions<br>
+✅ Income & Expense Tracking<br>
+✅ Real-time Balance Calculation<br>
+✅ Profile Management<br>
+✅ Download PDF Report<br>
+✅ Cloud Database Support<br>
 ✅ Fully Responsive UI
 
 <h3>🔐 Security</h3>
-- Passwords hashed using bcrypt
-- JWT-based authentication
-- Protected routes
-- Environment variables secured
+- Passwords hashed using bcrypt<br>
+- JWT-based authentication<br>
+- Protected routes<br>
+- Environment variables secured<br>
 
 <h3>⭐ Support</h3>
 If you like this project, please ⭐ star the repository to support my work!
 
 <h3>🤝 Contributions</h3>
-Contributions, issues, and feature requests are welcome!
-Feel free to fork and improve the project.
+Contributions, issues, and feature requests are welcome!<br>
+Feel free to fork and improve the project.<br><br>
 
 <p><b>🔥 Built with passion using MERN Stack</b></p>
