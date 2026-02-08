@@ -73,6 +73,8 @@ function Profile() {
           </button>
         </form>
 
+        <Link className="back-link" to="/change-password">Change Password →</Link>
+
         <Link className="back-link" to="/dashboard">
           ← Back to Dashboard
         </Link>
